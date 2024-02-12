@@ -1,12 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import { ActivityIndicator, FlatList, Text, View, Button } from "react-native";
-import { styles } from "./style";
-import { deleteFut } from "../../service";
+import { Button, Text, View } from 'react-native';
+import { deleteFut } from '../../service';
+import { styles } from './style';
 
 function Item({ data, delItem }) {
-  // const {local,endereco, presente} = data
-
   const delFut = async () => {
     try {
       await deleteFut(data.id);
@@ -24,7 +22,6 @@ function Item({ data, delItem }) {
     </View>
   );
 }
-
 
 Item.propTypes = {
   data: PropTypes.object,

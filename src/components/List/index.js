@@ -1,8 +1,8 @@
-import React from "react";
-import { ActivityIndicator, FlatList, Text, View } from "react-native";
-import Item from "./item";
+import React from 'react';
+import { FlatList } from 'react-native';
+import Item from './item';
 
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 const List = ({ data, delItem }) => {
   return (
