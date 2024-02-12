@@ -25,4 +25,15 @@ function Item({ data, delItem }) {
   );
 }
 
+
+Item.propTypes = {
+  data: PropTypes.object,
+  delItem: PropTypes.func,
+};
+
+Item.defaultProps = {
+  data: {},
+  delItem: () => {},
+};
+
 export default Item;

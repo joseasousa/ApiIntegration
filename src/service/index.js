@@ -11,7 +11,6 @@ export async function getFut() {
 export async function createFut(fut) {
   const response = await axios.post(`${URL}/fut`);
 
-  console.log(response.data);
 
   return response.data;
 }
@@ -19,7 +18,6 @@ export async function createFut(fut) {
 export async function updateFut(fut, id) {
   const response = await axios.put(`${URL}/fut/${id}`, fut);
 
-  console.log(response.data);
 
   return response.data;
 }
